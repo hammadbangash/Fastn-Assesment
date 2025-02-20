@@ -25,10 +25,14 @@ describe('Fastn.ai', () => {
    });
 
    it('Create new Flow', () =>{
+
+     var flowName = "flow"+Math.floor(Math.random() * 100);
+
      flowsTemplate.createClickFlowButton();
-     flowsTemplate.enterFlowName("FLOW-1");
+     flowsTemplate.enterFlowName(flowName);
      flowsTemplate.createFlow();
 
+     cy.url().should('include.text', flowName);
    })
 
    it('Add New Connector and Make it live', ()=>{
