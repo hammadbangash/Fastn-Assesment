@@ -6,15 +6,25 @@ This project automates a user journey in Fastn, focusing on creating and testing
 The following steps are automated:
 
 1.User logs in to Fastn
+
 2.User navigates to Flows
+
 3.User initiates a new flow
+
 4.User enters a flow name
+
 5.User is redirected to the flow canvas
+
 6.User drags and drops a connector step
+
 7.User selects Shopify | Get Products
+
 8.User enters store details: Store Name and API Key
+
 9.User enters a product limit
+
 10. User deploys flow to production
+
 ## Installations
 
 You need to have Node.js installed before using Cypress.
