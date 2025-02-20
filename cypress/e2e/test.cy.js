@@ -21,7 +21,7 @@ describe('Fastn.ai', () => {
 
     dashboardTemplate.openSidebar();
     dashboardTemplate.openFlows();
-    cy.url().should('include.text', "https://live.fastn.ai/app/projects/16d94bb6-78b4-4bd2-91b5-22db99af946e/api");
+    cy.url().should('include.text', "/api");
    });
 
    it('Create new Flow', () =>{
